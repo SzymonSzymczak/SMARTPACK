@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Szymon Szymczak - HTML5 Boilerplate</title>
+    <meta
+      name="description"
+      content="This is my HTML5 boilerplate. I use it to build fast, robust, and adaptable web apps or sites."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#e85e00" />
+    <meta name="msapplication-TileColor" content="#e85e00" />
+    <meta name="theme-color" content="#e85e00" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"
+      integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""
+    ></script>
+    <script src="/script/network_settings.js"></script>
+    <script src="/script/leaflet-providers.js"></script>
+    <script src="/script/dataHandler.js"></script>
+    <script src="/script/saved_routes.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="c-logo"><h3 class="c-logo__text">SMARTPACK</h3></div>
+      <div class="c-nav">
+        <ul class="c-nav__list">
+          <li class="c-nav__item">
+            <a class="c-nav__link" href="index.html">Home </a>
+          </li>
+          <li class="c-nav__item">
+            <a class="c-nav__link" href="saved_routes.html"
+              >Saved Routes
+              <hr
+            /></a>
+          </li>
+          <li class="c-nav__item">
+            <a class="c-nav__link" href="statistics.html">Statistics</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section style="height: 700px;" id="js-map" class="js-map u-max-width">
+      <h2 class="o-title">Choose a saved route</h2>
+      <hr />
+      <div class="js-routes">
+        <div class="c-route">
+          <p>Joggen langs de leie</p>
+          <p>02 Jun 2018</p>
+        </div>
+        <hr />
+        <div class="c-route">
+          <p>Wandeling Brugge</p>
+          <p>28 Jul 2018</p>
+        </div>
+        <hr />
+      </div>
+    </section>
+  </body>
+</html>
